@@ -1,0 +1,47 @@
+/* 1. External Imports */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap");
+
+/* 2. Tailwind v4 Import (Replaces the 3 old @tailwind directives) */
+@import "tailwindcss";
+
+/* 3. Your Custom Configuration (Replaces tailwind.config.js) */
+@theme {
+  --color-primary-black: #1a1a1a;
+  --color-accent-pink: #ff006e;
+  --color-cyan: #00f5ff;
+  --color-off-white: #fafafa;
+  --color-dark-slate: #0d0d0d;
+
+  --font-display: "Space Mono", monospace;
+  --font-body: "Inter", sans-serif;
+
+  --animate-fade-in-up: fadeInUp 0.5s ease-out;
+}
+
+/* 4. Your Custom Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 5. Your Global Styles */
+@layer base {
+  body {
+    @apply bg-off-white text-primary-black font-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-bold;
+  }
+}
