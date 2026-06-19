@@ -20,9 +20,9 @@ export const Header: React.FC<HeaderProps> = ({
   logo = "/src/assets/logo.svg",
   logoText = "Creative Agency",
   navLinks = [
-    { label: "About", href: "#about" },
     { label: "Work", href: "#work" },
     { label: "Services", href: "#services" },
+    { label: "About", href: "#about" },
     { label: "Contact", href: "#contact" },
   ],
   ctaButtonText = "Get Started",
@@ -56,12 +56,9 @@ export const Header: React.FC<HeaderProps> = ({
         animate={{ y: 0 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
       >
-        {/* LAYOUT WRAPPER: 
-          w-full guarantees it spans the screen. 
-          justify-between pushes the 3 child elements apart. 
-        */}
+        {/* LAYOUT WRAPPER */}
         <div className="w-full max-w-7xl mx-auto px-6 md:px-8 flex items-center justify-between h-16 md:h-20">
-          {/* 1. LEFT: Logo */}
+          {/* LEFT: Logo */}
           <a
             href="/"
             className="flex items-center gap-2 font-display font-bold text-lg md:text-xl relative z-50 hover:opacity-80 transition-opacity hover:text-white"
@@ -78,7 +75,7 @@ export const Header: React.FC<HeaderProps> = ({
             </span>
           </a>
 
-          {/* 2. CENTER: Desktop Navigation (Hidden on lg < 1024px) */}
+          {/* CENTER: Desktop Navigation (Hidden on lg < 1024px) */}
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
@@ -92,7 +89,7 @@ export const Header: React.FC<HeaderProps> = ({
             ))}
           </nav>
 
-          {/* 3. RIGHT: Actions (CTA Button & Mobile Toggle) */}
+          {/* RIGHT: Actions (CTA Button & Mobile Toggle) */}
           <div className="flex items-center gap-4 relative z-50">
             {/* Desktop CTA (Hidden on lg < 1024px) */}
             <a
@@ -151,9 +148,6 @@ export const Header: React.FC<HeaderProps> = ({
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* Spacer to prevent content from hiding under the fixed header */}
-      <div className="h-16 md:h-20 w-full" />
     </>
   );
 };

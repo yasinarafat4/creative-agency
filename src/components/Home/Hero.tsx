@@ -22,10 +22,8 @@ export const Hero: React.FC<HeroProps> = ({
   buttonHref = "#contact",
 }) => {
   return (
-    // -mt-20 pulls the background up under the header.
-    // pt-20 pushes the flex-center calculation back down so text isn't cut off.
-    <section className="relative w-full h-[900px] flex flex-col items-center justify-center overflow-hidden -mt-20 pt-20">
-      {/* 1. Background Image */}
+    <section className="relative w-full h-[900px] flex flex-col items-center justify-center overflow-hidden pt-20">
+      {/* Background Image */}
       <div className="absolute inset-0 w-full h-full -z-20">
         <img
           src={backgroundImage}
@@ -34,14 +32,12 @@ export const Hero: React.FC<HeroProps> = ({
         />
       </div>
 
-      {/* 2. Dark Overlay - Ensures text is always readable over any image */}
+      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-[#05070c]/80 -z-10 backdrop-blur-[2px]" />
 
-      {/* 3. Center Content */}
+      {/* Center Content */}
       <div className="w-full mx-auto px-6 gap-6 flex flex-col items-center text-center relative z-10">
-        {/* Heading 
-            Added w-full and max-w-[900px] to force the text to spread out! 
-        */}
+        {/* Heading */}
         <motion.h1
           className="w-full max-w-[900px] font-display font-bold text-4xl md:text-6xl lg:text-7xl text-white"
           initial={{ opacity: 0, y: 30 }}
@@ -51,9 +47,7 @@ export const Hero: React.FC<HeroProps> = ({
           {heading}
         </motion.h1>
 
-        {/* Subheading 
-            Added w-full and max-w-[700px] to force the text to spread out!
-        */}
+        {/* Subheading */}
         <motion.p
           className="w-full max-w-[700px] text-lg md:text-xl text-neutral-300 mb-10 leading-relaxed"
           initial={{ opacity: 0, y: 30 }}
@@ -63,7 +57,7 @@ export const Hero: React.FC<HeroProps> = ({
           {subheading}
         </motion.p>
 
-        {/* Call to Action Button */}
+        {/* CTA Button */}
         <motion.a
           href={buttonHref}
           className="px-10 py-4 text-base font-bold text-white rounded-md bg-gradient-to-br from-brand-green to-[#059669] hover:opacity-90 hover:shadow-lg hover:shadow-brand-green/30 duration-200"
