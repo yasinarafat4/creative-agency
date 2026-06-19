@@ -1,4 +1,5 @@
-import Header from "./components/Header/Header";
+import Footer from "./components/Shared/Footer";
+import Header from "./components/Shared/Header";
 import Home from "./pages/home";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <main>
         <Home />
       </main>
+      <Footer />
     </>
   );
 }

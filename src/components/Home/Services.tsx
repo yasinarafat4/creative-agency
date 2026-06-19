@@ -64,7 +64,7 @@ export const Services: React.FC = () => {
           </motion.span>
           {/* Heading */}
           <motion.h2
-            className="w-full max-w-[900px] font-display font-bold text-4xl md:text-6xl lg:text-7xl text-white"
+            className="w-full max-w-[900px] font-display font-bold text-3xl md:text-4xl lg:text-5xl text-white"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
