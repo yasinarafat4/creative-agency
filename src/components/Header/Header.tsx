@@ -49,8 +49,8 @@ export const Header: React.FC<HeaderProps> = ({
       <motion.header
         className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
           scrolled
-            ? "bg-white/60 backdrop-blur-md shadow-sm border-b border-neutral-200"
-            : "bg-white/50 backdrop-blur-sm"
+            ? "bg-white/10 backdrop-blur-md"
+            : "bg-transparent backdrop-blur-sm"
         } ${variant === "dark" ? "bg-primary-black/95 text-white" : "text-primary-black"}`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -97,7 +97,7 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Desktop CTA (Hidden on lg < 1024px) */}
             <a
               href={ctaButtonHref}
-              className="hidden lg:flex items-center justify-center px-6 py-2.5 bg-accent-pink text-white text-sm font-medium rounded-md hover:bg-accent-pink-dark hover:shadow-lg transition-all duration-200 whitespace-nowrap"
+              className="hidden lg:flex items-center justify-center px-6 py-2.5 bg-gradient-to-br from-brand-green to-[#059669] text-white text-sm font-medium rounded-md hover:opacity-90 hover:shadow-lg hover:shadow-brand-green/30 transition-all duration-200 whitespace-nowrap"
             >
               {ctaButtonText}
             </a>
