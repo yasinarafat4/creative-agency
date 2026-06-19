@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import defaultHeroBg from "/src/assets/hero-bg.webp";
 
 interface HeroProps {
   backgroundImage?: string;
@@ -10,7 +11,7 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({
-  backgroundImage = "/src/assets/hero-bg.webp",
+  backgroundImage = defaultHeroBg,
   heading = (
     <>
       Transform Your <br className="hidden md:block" />

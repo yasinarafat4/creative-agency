@@ -4,7 +4,7 @@ import Work from "../components/Home/Work";
 const Home = () => {
   return (
     <div>
-      <Hero backgroundImage="/src/assets/hero-bg.webp" />
+      <Hero />
       <Work />
     </div>
   );
