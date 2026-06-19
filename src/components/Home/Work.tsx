@@ -62,7 +62,7 @@ export const Work: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Our Portfolio
+            // Our Portfolio
           </motion.span>
           {/* Heading */}
           <motion.h2
