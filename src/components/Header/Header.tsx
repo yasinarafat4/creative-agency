@@ -144,7 +144,7 @@ export const Header: React.FC<HeaderProps> = ({
             <a
               href={ctaButtonHref}
               onClick={() => setIsMenuOpen(false)}
-              className="mt-8 w-full py-4 bg-accent-pink text-white text-center rounded-md font-bold text-lg hover:bg-accent-pink-dark transition-colors"
+              className="mt-8 w-full md:w-60 py-4 bg-accent-pink text-white text-center rounded-md font-bold text-lg hover:bg-accent-pink-dark transition-colors"
             >
               {ctaButtonText}
             </a>
