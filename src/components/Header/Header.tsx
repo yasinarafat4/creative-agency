@@ -20,16 +20,11 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({
   //   logo = headerLogo,
   logo,
-  logoText = "Creative Agency",
-  navLinks = [
-    { label: "Work", href: "#work" },
-    { label: "Services", href: "#services" },
-    { label: "About", href: "#about" },
-    { label: "Contact", href: "#contact" },
-  ],
-  ctaButtonText = "Get Started",
-  ctaButtonHref = "#contact",
-  variant = "light",
+  logoText = "",
+  navLinks = [],
+  ctaButtonText,
+  ctaButtonHref,
+  variant,
 }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);

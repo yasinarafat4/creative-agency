@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <Header
-        logo="/src/assets/logo.svg"
+        logo=""
         logoText="Creative"
         navLinks={[
           { label: "Work", href: "#work" },
