@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import defaultHeroBg from "/src/assets/hero-bg.webp";
+import defaultHeroBg from "../../assets/hero-bg.webp";
 
 interface HeroProps {
   backgroundImage?: string;

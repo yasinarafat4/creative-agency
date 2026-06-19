@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import React, { useEffect, useState } from "react";
-import headerLogo from "/src/assets/logo.svg";
+import headerLogo from "../../assets/logo.svg";
 
 interface NavLink {
   label: string;
