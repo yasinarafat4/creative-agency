@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import React, { useEffect, useState } from "react";
-import headerLogo from "../../assets/logo.svg";
+// import headerLogo from "../../assets/logo.svg";
 
 interface NavLink {
   label: string;
@@ -18,7 +18,8 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({
-  logo = headerLogo,
+  //   logo = headerLogo,
+  logo,
   logoText = "Creative Agency",
   navLinks = [
     { label: "Work", href: "#work" },
