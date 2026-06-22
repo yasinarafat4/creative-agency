@@ -122,8 +122,9 @@ export const Footer: React.FC<FooterProps> = ({
             </ul>
           </div>
         </div>
+        <div className="mx-auto my-8 h-px w-full bg-neutral-400/60" />
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row max-w-7xl mx-auto px-6 md:px-8  items-center justify-between pt-8 border-t border-neutral-400/60 text-sm text-neutral-400 gap-4">
+        <div className="flex flex-col md:flex-row mx-auto px-6 md:px-8 max-w-7xl items-center justify-between text-sm text-neutral-400 gap-4">
           <p>
             © {currentYear} {logoText}. All rights reserved.
           </p>
