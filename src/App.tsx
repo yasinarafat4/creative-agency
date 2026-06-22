@@ -1,3 +1,4 @@
+import BackToTop from "./components/Common/BackToTop";
 import Footer from "./components/Shared/Footer";
 import Header from "./components/Shared/Header";
 import Home from "./pages/home";
@@ -21,6 +22,7 @@ function App() {
       {/* Your page content goes here */}
       <main>
         <Home />
+        <BackToTop />
       </main>
       <Footer />
     </>

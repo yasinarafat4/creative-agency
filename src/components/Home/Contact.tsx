@@ -42,12 +42,12 @@ export const Contact: React.FC = () => {
         </motion.p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Contact Information */}
         <motion.div
           className="flex flex-col space-y-8 justify-center"
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
@@ -93,10 +93,11 @@ export const Contact: React.FC = () => {
 
         {/* Contact Form */}
         <motion.div
-          className="card p-6 lg:p-8 bg-[#05070c] border border-neutral-800/80 rounded-2xl"
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          className="card sm:max-w-[450px] lg:max-w-none p-6 lg:p-8 bg-[#05070c] border border-neutral-800/80 rounded-2xl"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
         >
           <form
             className="flex flex-col gap-6"
