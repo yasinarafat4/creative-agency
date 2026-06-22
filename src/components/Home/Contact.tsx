@@ -93,7 +93,7 @@ export const Contact: React.FC = () => {
 
         {/* Contact Form */}
         <motion.div
-          className="card p-8 bg-[#05070c] border border-neutral-800/80 rounded-2xl"
+          className="card p-6 lg:p-8 bg-[#05070c] border border-neutral-800/80 rounded-2xl"
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}

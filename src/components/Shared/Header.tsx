@@ -54,7 +54,7 @@ export const Header: React.FC<HeaderProps> = ({
         transition={{ duration: 0.4, ease: "easeOut" }}
       >
         {/* LAYOUT WRAPPER */}
-        <div className="w-full max-w-7xl mx-auto px-6 md:px-8 flex items-center justify-between h-16 md:h-20">
+        <div className="w-full max-w-7xl mx-auto px-6 md:px-8 flex items-center justify-between h-18 md:h-20">
           {/* LEFT: Logo */}
           <a
             href="/"
@@ -103,9 +103,9 @@ export const Header: React.FC<HeaderProps> = ({
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
-                <X className="w-6 h-6" />
+                <X className="w-8 h-8" />
               ) : (
-                <Menu className="w-6 h-6" />
+                <Menu className="w-8 h-8" />
               )}
             </button>
           </div>

@@ -2,11 +2,12 @@ import { motion } from "framer-motion";
 import React from "react";
 import {
   FaDribbble,
+  FaFacebook,
   FaGithub,
   FaInstagram,
   FaLinkedin,
-  FaTwitter,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 interface FooterProps {
   logoText?: string;
@@ -69,17 +70,24 @@ export const Footer: React.FC<FooterProps> = ({
 
             {/* Social Icons */}
             <div className="flex items-center gap-4">
-              {[FaTwitter, FaInstagram, FaLinkedin, FaDribbble, FaGithub].map(
-                (Icon, i) => (
-                  <a
-                    key={i}
-                    href="#"
-                    className="p-2.5 rounded-full bg-primary-light border border-neutral-800 text-neutral-400 hover:text-brand-green hover:border-brand-green hover:bg-brand-green/10 transition-all duration-300"
-                  >
-                    <Icon size={18} />
-                  </a>
-                ),
-              )}
+              {[
+                { Icon: FaFacebook, url: "https://www.facebook.com/" },
+                { Icon: FaLinkedin, url: "https://www.linkedin.com/" },
+                { Icon: FaXTwitter, url: "https://x.com/" },
+                { Icon: FaGithub, url: "https://github.com/" },
+                { Icon: FaInstagram, url: "https://www.instagram.com/" },
+                { Icon: FaDribbble, url: "https://dribbble.com/" },
+              ].map(({ Icon, url }, i) => (
+                <a
+                  key={i}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2.5 rounded-full bg-primary-light border border-neutral-800 text-neutral-400 hover:text-brand-green hover:border-brand-green hover:bg-brand-green/10 transition-all duration-300"
+                >
+                  <Icon size={18} />
+                </a>
+              ))}
             </div>
           </div>
 
